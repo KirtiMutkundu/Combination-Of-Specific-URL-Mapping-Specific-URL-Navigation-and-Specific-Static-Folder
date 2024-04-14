@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+</head>
+<body>
+    <center>
+        <h1>STYLISH CLOTHES</h1>
+        <img src="{% static 'images/ct1.webp' %}" alt="no image" height="300px" width="400px">
+        <h2><a href="{% url 'app1:food' %}">Back to Food</a></h2>
+        <h2><a href="{% url 'app1:drinks' %}">Back to Drinks</a></h2>
+        <h2><a href="{% url 'app2:shoes' %}">Back to Shoes</a></h2>
+    </center>
+</body>
+</html>
